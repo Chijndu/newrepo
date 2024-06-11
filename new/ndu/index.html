@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        ul{
+            list-style: none;
+        }
+        body , html{
+            overflow-x: hidden;
+            background: #ece1e7;
+        }
+        header{
+            width: 100dvw;
+            height: 100dvh;
+            background-image: url("images\ \(21\).jpeg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-content{
+            margin-bottom:0px;
+            color: white;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .header-content h2{
+            font-size: 4vmin;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .line{
+            width: 150px;
+            height: 4px;
+            background-color: #fc036b;
+            margin: 7px auto;
+            border-radius: 5px;
+        }
+        .header-content h1{
+            font-size: 7vmin;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: color 0.2s 0.1s ease-in;
+
+        }
+        .header-content h1:hover{
+            color: #fc036b;
+
+        
+
+        }
+        .ctn{
+            padding: 8px 15px;
+            background: #fc036b;
+            border-radius: 30px;
+            color: whitesmoke;
+        }
+        .navbar{
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            justify-content: space-between;
+            padding: 30px;
+            color: whitesmoke;
+            background-color: rgba(0, 0, 0, 0.25);
+            height: 4px;
+        }
+        .nav-links{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+        .nav-links li{
+            margin: 0 15px;}
+        ul li a{
+                font-size: 22px;
+
+        }
+        .material-symbols-outlined{
+            margin: 0px;
+        }
+
+        @keyframes ctn{
+            from{background-color: #fc036b;}
+            to{background-color: blue;}
+        }
+       
+        .ctn{
+            animation-name: ctn;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes adventure{
+            from{color: white;}
+            to{color: #fc036b;}
+            0%{transform: translateY(0px);}
+            10%{transform: translateX(50px);}
+          
+        } 
+        img{
+            transition: transform 2s ease;
+        }
+        img:hover{
+            transform: scale(1.1);
+        }
+        .ctn:hover{
+            background: whitesmoke;
+            color: #fc036b;
+            box-shadow: 2px 2px 5px #000000;
+        }
+        .logo{
+            animation-name: adventure;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        section{
+            width: 80%;
+            margin: 80px auto;
+    
+        }
+        .tittle{
+            text-align: center;
+            font-size: 4vmin;
+            color: #49497e;
+        }
+        .img{
+            width: 450px;
+            height: 300px;
+            
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            
+        }
+        .row .col{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .events .row{
+            margin-top: 50px;
+        }
+        h4{
+            font-size: 3vmin;
+            color: #484872;
+            margin: 20px auto;
+        }
+        p{
+            color: #7c7c7c;
+            padding: 0px 40px;
+        }
+        .explore{
+            width: 100%;
+            height: 100vh;
+            background-image: url(images\ \(1\).jpeg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+        }
+        .explore-content{
+            width: 60%;
+            padding: 50px;
+            color: whitesmoke;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .explore-content h1{
+            font-size: 7vmin;
+        }
+        .explore-content .line{
+            margin-bottom: 50px;
+        }
+        .explore-content p{
+            color: rgb(227, 228, 230);
+        }
+        .explore-content .ctn{
+            margin-top: 30px;
+        }
+        .tours .image-gallery{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .image-gallery img{
+            max-width: 250px;
+            margin: 5px;
+        }
+       .content-col{
+        width: 40%;
+       }
+       .image-col{
+        width: 60%;
+       }
+       .content-col h1{
+        font-size: 6vmin;
+        color: #484872;
+       }
+       .content-col .line{
+        margin-left: -1px;
+       }
+       .content-col p{
+        padding: 0;
+        margin: 30px auto;
+       }
+       .content-col .ctn{
+        margin-left: -100px;
+       }
+       .footer{
+        width: 100%;
+        height: 100px;
+        padding: 20px 80px;
+        margin: 0;
+        background: #484872;
+        text-align: center;
+       }
+       .footer p{
+        color: whitesmoke;
+        margin: 20px auto;
+        padding: 20px auto;
+       }
+       #menu{
+            display: none;
+       }
+       button{
+        display: none;
+
+       }
+
+            
+        @media(max-width: 700px){
+            #botten{
+                width: 20px;
+                height: 20px;
+                display: block;
+                margin-right: 10px;
+                margin-top: 10px;
+            }
+           button > #menu{
+            display: block;
+            height: 15px;
+            width: 15px;
+            z-index: 2;
+            }
+        
+            .navbar{
+                padding: 0;
+                height: 35px;
+            }
+            .nav-links li{
+                margin: 15px;       
+            }
+            .nav-links{
+                position: absolute;
+                background: #fc036b;
+                height: 100dvh;
+                width: 150px;
+                top: 0;
+                right:0px;
+                flex-direction: column;
+                padding-top: 80px;
+                display: none;
+            }
+           ul li a{
+                font-size: 4vmin;
+            }
+            .navbar h1{
+                font-size: 15px;
+                padding-left: 5px;
+                margin-top: 5px;
+            }
+            .header-content h1{
+                margin-top: 10px;
+            }
+            .explore-content{
+            width: 80%;
+            padding: 20px;
+            color: whitesmoke;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            }
+            
+            .explore-content h1{
+            font-size: 5vmin;
+            }
+            .explore-content .line{
+            margin-bottom: 20px;
+            width: 100px;
+            }
+            .explore-content .ctn{
+            margin-top: 20px;
+            }
+            .tittle{
+            text-align: center;
+            font-size: 4vmin;
+            color: #49497e;
+        }
+        .img{
+            width: 100%;
+            
+        }
+        .row{
+            display: block; 
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            
+        }
+        
+        .events .row{
+            margin-top: 50px;
+        }
+        h4{
+            font-size: 4vmin;
+            color: #484872;
+            margin: 20px auto;
+        }
+        .row .col .ctn{
+            margin: 15px;
+        }
+        .tours.col{
+            width: 100%;
+        }
+        .image-gallery img{
+            width: 100%;
+        }
+        .image-gallery{
+            justify-content: center;
+            align-items: center;
+            display: block;
+           
+        }
+        .content-col{
+        width: 100%;
+       }
+       .image-col{
+        width: 100%;
+       }
+       .footer{
+        padding: 0px 0px;
+        margin: 0;
+        background: #484872;
+        text-align: center;
+       }
+       .footer p{
+        color: whitesmoke;
+        margin: 10px auto;
+        padding: 10px auto;
+       }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links" id="navLinks">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a class="ctn" href="#">Contact</a></li>
+        </ul>
+       <button id="botten"> <img id="menu" src="menu1.png" alt="" ></button>
+    </nav>
+ <header>
+    <div class="header-content">
+        <h2>Explore The colorful world</h2>
+        <div class="line"></div>
+        <h1>A WONDERFUL GIFT</h1>
+        <a href="#" class="ctn">Learn More</a>
+    </div>
+ </header> 
+ <section class="events">
+    <div class="tittle">
+        <h1>Upcoming Events</h1>
+        <div class="line"></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="images (22).jpeg" class="img">
+            <h4>Everest Camp</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias adipisci id tempora veniam beatae veritatis, eveniet odio obcaecati. Eum ab obcaecati optio. Magnam officiis itaque quia sed ipsam explicabo soluta?</p>
+            <a href="#" class="ctn">learn more</a>
+        </div>
+        <div class="col">
+            <img src="images (21).jpeg" class="img">
+            <h4>Holidays</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias adipisci id tempora veniam beatae veritatis, eveniet odio obcaecati. Eum ab obcaecati optio. Magnam officiis itaque quia sed ipsam explicabo soluta?</p>
+            <a href="#" class="ctn">learn more</a>
+        </div>
+    </div>
+ </section> 
+ <section class="explore">
+    <div class="explore-content">
+    <h1>EXPLORE THE WORLD</h1>
+    <div class="line"></div>
+    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod aliquam non error soluta esse cum maiores, sunt minima amet ut fugiat rerum quasi alias ipsum voluptatem impedit quis odit dignissimos!</P>
+    <a href="#" class="ctn">Learn More</a>
+    </div>
+ </section> 
+ <section class="tours">
+    <div class="row">
+        <div class="col content-col">
+            <h1>UP COMING TOURS AND DESTINATION</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis veniam tenetur facere laborum asperiores sunt cupiditate. Voluptatibus odit non quod suscipit exceptur</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+        <div class="col image-col">
+            <div class="image-gallery">
+                <img src="images (21).jpeg" alt="">
+                <img src="images (22).jpeg" alt="">
+                <img src="images (1).jpeg" alt="">
+                <img src="images (21).jpeg" alt="">
+            </div>
+        </div>
+    </div>
+ </section>
+ <section class="footer">
+    <p>123 onyeoma lodge nnaemeka's room amansea, awka, anambara, nigeria | phone: 09060026591 | Email: nwanneemmanuella@gmail.com</p>
+    <p>Copyright @ 2024 Indoor Adventure</p>
+ </section>
+ <script src="new.js">
+    
+ </script>
+</body>
+</html>
