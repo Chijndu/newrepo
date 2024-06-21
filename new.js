@@ -3,12 +3,12 @@ function Menu(){
     let y=document.getElementById("navLinks");
 
     x.addEventListener("click", function(){
-        if(y.style.display===("block")){
-            y.style.display="none"
-        }else{
             y.style.display="block"
+        })
+    window.addEventListener("scroll", function(){
+        if (document.body.clientWidth <= 700){
+        y.style.display="none"
         }
-    })
-
+    });    
 };
 Menu();
